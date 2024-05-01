@@ -25,5 +25,3 @@ RUN chown -R node:node ./node_modules  # Add this line to change ownership
 USER node
 EXPOSE 3000/tcp
 CMD ["pnpm", "run", "start"]
-
-# Optionally, add HEALTHCHECK as needed
