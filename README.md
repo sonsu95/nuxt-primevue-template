@@ -7,8 +7,9 @@ bunx nuxi upgrade
 
 ## default
 1. use 3000 port default
-2. use lara presets on primevue. you can change presets on ./presets/lara
-3. this template is using pnpm
+2. this template is using pnpm
+3. use lara presets on primevue. you can change presets on ./presets/lara
+4. use prefix 'S' for components. you can change prefix on nuxt.config.ts
 
 ## How to use
 - modify container_name in docker-compose.yml if you want
