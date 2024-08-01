@@ -3,19 +3,23 @@ import path from 'node:path';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   css: ['~/assets/css/base.css'],
   modules: ['nuxt-primevue', '@nuxtjs/tailwindcss'],
+
   primevue: {
     options: { unstyled: true },
     components: { prefix: 'S' },
     importPT: { as: 'Lara', from: path.resolve(__dirname, './presets/lara/') },
   },
+
   tailwindcss: {
     config: {
       content: ['presets/**/*.{js,vue,ts}'],
@@ -50,4 +54,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: '2024-08-01',
 });
